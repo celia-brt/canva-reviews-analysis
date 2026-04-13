@@ -34,7 +34,7 @@ a 4.8 star average.
 | 2 | **1,223 users are genuinely frustrated** | Negative score + explicit complaint keyword — crashes, bugs, slow performance |
 | 3 | **Performance is the #1 complaint** | "Slow" appears 243 times in negative reviews |
 | 4 | **Version 2.335.1 was a problematic release** | Highest complaint rate at 18.9% |
-| 5 | **97% response rate — but 99.7% automated** | Only 43 out of 13,087 responses are personalised |
+| 5 | **97% response rate of negative/neutral reviews — but 99.7% automated** | Only 43 out of 13,087 responses are personalised |
 
 ---
 
@@ -91,13 +91,7 @@ those responses are identical automated messages. Only 43 out of
 
 ---
 
-## Dashboard
-
-👉 [View Looker Studio Dashboard](#) ← coming soon
-
----
-
-## Limitations
+## ⚠️ Limitations
 
 - **False negatives:** some 1-2 star reviews contain positive 
   language, likely due to inverted rating scales in Asian markets
