@@ -6,18 +6,6 @@ scratch using Python scraping, SQLite, and Looker Studio.
 
 ---
 
-## Table of Contents
-1. [The Brief](#-the-brief)
-2. [Key Findings](#-key-findings)
-3. [Dataset](#-dataset)
-4. [Methodology](#-methodology)
-5. [SQL Analysis](#-sql-analysis)
-6. [Dashboard](#-dashboard)
-7. [Limitations](#-limitations)
-8. [About This Project](#-about-this-project)
-
----
-
 ## 📌 The Brief
 
 Canva has over 220 million users worldwide and a 4.8 star rating 
@@ -64,7 +52,7 @@ a 4.8 star average.
 
 ---
 
-## 🛠️ Methodology
+## ⚒️ Methodology
 1) Data Collection  → Google Play scraping (Python)
 2) Data Cleaning    → Text cleaning, feature engineering (Python)
 3) Database Design  → 3-table relational schema (SQLite)
@@ -79,9 +67,9 @@ a 4.8 star average.
 
 **Q1 — How do customers perceive Canva's app?**
 
-84.7% of users are satisfied. But 5,143 users left negative reviews — 
-and among those with explicit complaint keywords, the signal is clear: 
-these are genuinely frustrated users, not rating errors.
+84.7% of users rate Canva positively. 10.3% left a negative 
+review (1-2 stars). Among these, 1,223 contain explicit complaint 
+keywords — the most actionable segment for product improvement.
 
 **Q2 — What problems are users complaining about most?**
 
@@ -92,15 +80,13 @@ Combined stability issues (bug + not working + crash) account for
 **Q3 — Which app versions generate the most complaints?**
 
 Version 2.335.1 peaks at 18.9% negative rate — a likely problematic 
-release. Recent versions stabilise around 7-10%, suggesting 
-incremental improvement but no full resolution.
+release. Recent versions stabilise around 7-10%.
 
 **Q4 — Is Canva actually listening?**
 
 Canva responds to 96.9% of negative reviews. However, 99.7% of 
 those responses are identical automated messages. Only 43 out of 
-13,087 responses are personalised. High response rate does not 
-equal high quality of care.
+13,087 responses are personalised.
 
 ---
 
