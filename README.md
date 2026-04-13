@@ -7,14 +7,14 @@ built from scratch using Python scraping, SQLite, and Locker Studio.
 ---
 
 ## 📋 Table of Contents
-1. [The Brief](#the-brief)
-2. [Key Findings](#key-findings)
-3. [Dataset](#dataset)
-4. [Methodology](#methodology)
-5. [SQL Analysis](#sql-analysis)
-6. [Dashboard](#dashboard)
-7. [Limitations](#limitations)
-8. [Author](#author)
+1. [The Brief](#-the-brief)
+2. [Key Findings](#-key-findings)
+3. [Dataset](#-dataset)
+4. [Methodology](#-methodology)
+5. [SQL Analysis](#-sql-analysis)
+6. [Dashboard](#-dashboard)
+7. [Limitations](#-limitations)
+8. [Author](#-author)
 
 ---
 
