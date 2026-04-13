@@ -1,5 +1,5 @@
 # 🎨 Canva Reviews Analysis
-### "How do users perceive Canva, and where does it fail them?"
+### How do users perceive Canva, and where does it fail them?
 
 An end-to-end analysis of **50,000 Google Play reviews**, built from 
 scratch using Python scraping, SQLite, and Looker Studio.
@@ -64,6 +64,7 @@ a 4.8 star average.
 ## 🗄️ SQL Analysis
 
 ### The 4 Business Questions
+Full queries + inline insights → [`sql/analysis.sql`](sql/analysis.sql)
 
 **Q1 — How do customers perceive Canva's app?**
 
