@@ -2,7 +2,7 @@
 ### How do users perceive Canva, and where does it fail them?
 
 An end-to-end SQL analysis of **50,000 Google Play reviews**, 
-built from scratch using Python scraping, SQLite, and Tableau.
+built from scratch using Python scraping, SQLite, and Locker Studio.
 
 ---
 
@@ -43,7 +43,7 @@ a 4.8 star average.
 | # | Finding | Detail |
 |---|---------|--------|
 | 1 | **84.7% of reviews are positive** | Strong loyal user base — avg score 4.86 |
-| 2 | **5,143 users are deeply frustrated** | Avg score 1.24 — not just unhappy, really frustrated |
+| 2 | **1,223 users are genuinely frustrated** | Negative score + explicit complaint keyword — crashes, bugs, slow performance |
 | 3 | **Performance is the #1 complaint** | "Slow" appears 243 times in negative reviews |
 | 4 | **Version 2.335.1 was a bad release** | Highest complaint rate at 18.9% |
 | 5 | **97% response rate — but 99.7% automated** | Only 43 out of 13,087 responses are personalised |
@@ -76,11 +76,6 @@ a 4.8 star average.
 ---
 
 ## 🗄️ SQL Analysis
-
-### Schema — 3 relational tables
-
-canva_reviews_clean ──── reviewId ──── canva_responses
-canva_reviews_clean ──── appVersion ── app_versions
 
 ### Questions & Insights
 
@@ -122,3 +117,19 @@ High response rate ≠ high quality of care.
   proxy — no official release dates available
 - **English only:** scraper filtered for English reviews — 
   non-English user feedback not captured
+  
+---
+
+## 👩‍💻 About me and this project
+
+I'm Celia Breteau, a marketing insights professional 
+transitioning into data analytics. After 2 years analysing 
+audience profiles and consumer behaviour across 6 industry 
+sectors, I wanted to bring that business instinct into 
+a more technical skillset.
+
+This project was built because I genuinely wanted to understand 
+what real users think of Canva — not just the headline rating, 
+but the frustration behind it. Understanding customer needs 
+has always been at the core of my work, and data is just 
+a more precise way to do it.
