@@ -1,11 +1,11 @@
 # 🎨 Canva Google Play Reviews: customers frustrations, themes, and products signals
-### How do users perceive Canva, and where does it fail them?
+### How do users perceive Canva's app, and where does it fail them?
 
 This project analyses **50,000 Google Play reviews** (Nov 2025 – April 2026) to uncover what users actually struggle with behind Canva’s 4.8★ rating.
 
 Using a combination of **Python, SQL, and clustering techniques**, the analysis identifies recurring pain points, product issues, and patterns of user dissatisfaction at scale.
 
-The goal is simple: move beyond the average rating and surface the **real user frustrations that matter for product improvement.**
+Rather than analysing individual reviews, this project extracts structured insights from unstructured data to hightlight what truly impacts user experience.
 
 ---
 
