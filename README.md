@@ -1,15 +1,18 @@
-# 🎨 Canva Reviews Analysis
+# 🎨 Canva Google Play Reviews: customers frustrations, themes, and products signals
 ### How do users perceive Canva, and where does it fail them?
 
-An end-to-end analysis of **50,000 Google Play reviews**, built from 
-scratch using Python scraping, SQLite, and Looker Studio.
+This project analyses **50,000 Google Play reviews** (Nov 2025 – April 2026) to uncover what users actually struggle with behind Canva’s 4.8★ rating.
+
+Using a combination of **Python, SQL, and clustering techniques**, the analysis identifies recurring pain points, product issues, and patterns of user dissatisfaction at scale.
+
+The goal is simple: move beyond the average rating and surface the **real user frustrations that matter for product improvement.**
 
 ---
 
 ## 📌 The Brief
 
-Canva has over 220 million users worldwide and a 4.8 star rating 
-on the Google Play Store. But behind that number — what are users 
+Canva has over 220 million users worldwide and a 4.8★ rating 
+on the Google Play Store. But behind that number, what are users 
 actually saying?
 
 This project analyses 50,000 real Google Play reviews to answer 
@@ -20,9 +23,8 @@ four business questions:
 > 3. Which app versions are generating the most frustration?
 > 4. Is Canva actually listening — or just managing its rating?
 
-The goal is not to celebrate what works. It's to find the signal 
-inside the noise — the 5,143 frustrated users hidden behind 
-a 4.8 star average.
+The goal is not to highlight what works. It is to uncover the signal hidden in the noise — the real sources of user frustration behind an almost perfect rating.
+
 
 ---
 
@@ -42,7 +44,7 @@ a 4.8 star average.
 
 - **Source:** Google Play Store — Canva Android app
 - **Collection method:** Python (google-play-scraper library)
-- **Size:** 50,000 reviews collected April 2026
+- **Size:** 50,000 reviews collected (Nov 2025 to April 2026)
 - **Features engineered:**
   - `review_type` — positive / neutral / negative (based on score)
   - `has_complaint_keyword` — yes / no (crash, bug, slow, fix...)
