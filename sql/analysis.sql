@@ -146,14 +146,44 @@ GROUP BY response_type;
 
  Only 43 responses are personalised — suggesting an automated response system
 -- Positive reviews receive significantly less attention (13.3% response rate)
+-- ==============================================
+-- Q5 — What are the dominant frustration themes?
+-- ==============================================
 
+Source: Python clustering (Ollama) on 50,000 reviews
+Top negative clusters by negativity ratio (>0.5):
+
+INSIGHT:
+- 7 clusters identified with negativity ratio > 0.5
+Top 3 themes by volume:
+ 1. App stability / not working (cluster 253) — 605 verbatims
+ 2. Video download speed (cluster 247) — 365 verbatims  
+ 3. Subscription & refund issues (cluster 240) — 284 verbatims
+
+Performance & stability dominate — consistent with Q2 keyword analysis
+New finding: subscription/billing issues (cluster 240) — 
+not captured by keyword analysis, unique to clustering
+     
 -- ============================================================
 -- FINAL TAKEAWAYS
 -- ============================================================
 
-1. Canva benefits from a strong overall perception, but a small segment of users expresses critical issues.
-2. Performance and stability are the primary drivers of dissatisfaction.
-3. Certain app versions show clear spikes in negative feedback, indicating release-related issues.
-4. Canva responds at scale but relies heavily on automated messaging.
-     
-→ Key opportunity: improve product reliability and enhance the quality of user support interactions.
+1. Canva benefits from strong overall perception (84.7% positive),
+but 1,223 users express critical and actionable issues.
+
+2. Performance and stability are the primary drivers of dissatisfaction:
+"slow" (243x), "fix" (185x), combined stability issues (277 mentions).
+Confirmed by clustering — clusters 239, 247, 253 account for 1,114 verbatims.
+
+3. Certain app versions show clear spikes in negative feedback:
+version 2.335.1 peaks at 18.9% complaint rate.
+
+4. Canva responds at scale (96.9% of negative reviews) but 99.7% 
+of responses are automated — only 43 personalised responses out of 13,087.
+
+5. Clustering reveals a hidden friction point not captured by keyword analysis:
+subscription and billing issues (cluster 240 — 284 verbatims),
+suggesting users feel surprised or misled by Canva Pro charges.
+
+→ Key opportunity: prioritise performance fixes on high-complaint versions,
+address billing transparency, and move beyond templated support responses.
