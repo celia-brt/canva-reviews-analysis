@@ -9,87 +9,90 @@ Rather than analysing individual reviews, this project extracts structured insig
 
 ---
 
-## 📌 The Brief
-
-Canva has over 220 million users worldwide and a 4.8★ rating 
-on the Google Play Store. But behind that number, what are users 
-actually saying?
-
-This project analyses 50,000 real Google Play reviews to answer 
-four business questions:
-
-> 1. How do customers perceive Canva's app?
-> 2. What problems are users complaining about most?
-> 3. Which app versions are generating the most frustration?
-> 4. Is Canva actually listening — or just managing its rating?
-
-The goal is not to highlight what works. It is to uncover the signal hidden in the noise — the real sources of user frustration behind an almost perfect rating.
-
-
----
-
 ## 💡 Key Findings
 
 | # | Finding | Detail |
 |---|---------|--------|
 | 1 | **84.7% of reviews are positive** | Strong loyal user base — avg score 4.86 |
 | 2 | **1,223 users are genuinely frustrated** | Negative score + explicit complaint keyword — crashes, bugs, slow performance |
-| 3 | **Performance is the #1 complaint** | "Slow" appears 243 times in negative reviews |
-| 4 | **Version 2.335.1 was a problematic release** | Highest complaint rate at 18.9% |
-| 5 | **97% response rate of negative/neutral reviews — but 99.7% automated** | Only 43 out of 13,087 responses are personalised |
+| 3 | **App instability is the #1 pain point** | 605 verbatims — not working, slow, crashes |
+| 4 | **Billing issues hidden behind good ratings** | 284 refund/subscription verbatims |
+| 5 | **Version 2.335.1 was a problematic release** | 18.9% complaint rate vs 7-10% baseline |
+| 6 | **99.7% of responses are automated** | Only 43/13,087 personalised |
 
 ---
 
-## 📦 Dataset
+## Analysis
 
-- **Source:** Google Play Store — Canva Android app
-- **Collection method:** Python (google-play-scraper library)
-- **Size:** 50,000 reviews collected (Nov 2025 to April 2026)
-- **Features engineered:**
-  - `review_type` — positive / neutral / negative (based on score)
-  - `has_complaint_keyword` — yes / no (crash, bug, slow, fix...)
-  - `has_emoji` — yes / no
+**Overall perception**
 
-> To reproduce data collection: run `scripts/collect_reviews.py`
+Canva shows a very strong overall perception, with 84.7% of users rating the app positively.
+
+However, a smaller segment (1,223 users), express clear dissatisfaction with explicit complaint keywords.  
+This group represents the most actionable signal in the dataset.
 
 ---
 
-## ⚒️ Methodology
-1) Data Collection  → Google Play scraping (Python)
-2) Data Cleaning    → Text cleaning, feature engineering (Python)
-3) Database Design  → 3-table relational schema (SQLite)
-4) SQL Analysis     → 4 business questions
-5) Visualisation    → Looker Studio dashboard
+**What users actually complain about**
+
+SQL keyword analysis and verbatim clustering point to the same conclusion:
+performance and stability are Canva's core problem.
+
+The most critical themes include:
+
+| Theme | Negativity Ratio | Volume |
+|------|----------------|--------|
+| App not working | 1.06 | 605 |
+| App instability / slow | 1.10 | 144 |
+| Video download performance | 0.81 | 365 |
+| Billing & refunds | 0.78 | 284 |
+
+These issues point to a **reliability problem**, not a feature gap.
 
 ---
 
-## 🗄️ SQL Analysis
+**Which versions generate the most complaints?**
 
-### The 4 Business Questions
-Full queries + inline insights → [`sql/analysis.sql`](sql/analysis.sql)
+Version 2.335.1 peaks at 18.9% negative rate — well above 
+the 7-10% baseline of recent releases.
 
-**Q1 — How do customers perceive Canva's app?**
+---
 
-84.7% of users rate Canva positively. 10.3% left a negative 
-review (1-2 stars). Among these, 1,223 contain explicit complaint 
-keywords — the most actionable segment for product improvement.
+**Is Canva listening?**
 
-**Q2 — What problems are users complaining about most?**
+Canva responds to 96.9% of negative reviews, an extremely high response rate.
 
-Performance dominates. "Slow" appears 243 times, "fix" 185 times. 
-Combined stability issues (bug + not working + crash) account for 
-277 mentions. This is a reliability problem, not a design problem.
+However:
+- 99.7% of responses are automated  
+- Only 43 out of 13,087 are personalised
 
-**Q3 — Which app versions generate the most complaints?**
+This indicates a scalable but impersonal support strategy.
 
-Version 2.335.1 peaks at 18.9% negative rate — a likely problematic 
-release. Recent versions stabilise around 7-10%.
+---
+## Recommendations
 
-**Q4 — Is Canva actually listening?**
+| Priority | Theme | Recommendation |
+|----------|-------|----------------|
+| 🔴 Critical | App stability | Investigate cluster 253 — 605 users report the app not working at all |
+| 🔴 Critical | Video performance | Optimise video download and export pipeline |
+| 🟠 High | Billing transparency | Notify users clearly before any Pro charge — 284 refund requests suggest surprise billing |
+| 🟡 Medium | Mobile UX | Dedicated optimisation pass for mobile experience |
+| 🟡 Medium | User support | Move beyond automated responses for high-frustration reviews |
 
-Canva responds to 96.9% of negative reviews. However, 99.7% of 
-those responses are identical automated messages. Only 43 out of 
-13,087 responses are personalised.
+These recommendations focus on improving **product reliability, user trust, and perceived support quality**.
+
+---
+
+## How I Built It
+
+| Step | Tool | File |
+|------|------|------|
+| Data collection | Python — google-play-scraper | [`scripts/collect_reviews.py`](scripts/collect_reviews.py) |
+| Cleaning & features | Python — pandas, regex | [`scripts/clean_reviews.py`](scripts/clean_reviews.py) |
+| SQL analysis | SQLite — 3 relational tables | [`sql/analysis.sql`](sql/analysis.sql) |
+| Verbatim clustering | Python (embeddings + HDBSCAN, local LLM via Ollama) | [`scripts/cluster_summary.py`](scripts/cluster_summary.py) |
+| Visualisation | Looker Studio | [Dashboard](#) |
+
 
 ---
 
