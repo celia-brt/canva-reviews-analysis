@@ -112,7 +112,7 @@ These recommendations focus on improving **product reliability, user trust, and 
 ## 👩‍💻 About This Project
 
 I'm Celia Breteau, a marketing insights professional transitioning 
-into data analytics. After 2 years analysing audience profiles and 
+into data analytics role. After 2 years analysing audience profiles and 
 consumer behaviour across 6 industry sectors, I wanted to bring 
 that business instinct into a more technical skillset.
 
