@@ -5,7 +5,7 @@
 
 This project analyses **50,000 Google Play reviews** (Nov 2025 – April 2026) to uncover what users actually struggle with behind Canva’s 4.8★ rating.
 
-Using a combination of **Python, SQL, and clustering techniques**, the analysis identifies recurring pain points, product issues, and patterns of user dissatisfaction at scale.
+Using a combination of **Python, SQL, and AI clustering techniques**, the analysis identifies recurring pain points, product issues, and patterns of user dissatisfaction at scale.
 
 Rather than analysing individual reviews, this project extracts structured insights from unstructured data to hightlight what truly impacts user experience.
 
