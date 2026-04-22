@@ -3,7 +3,7 @@
 # Canva Google Play Reviews: customers frustrations, themes, and products signals
 ### How do users perceive Canva's app, and where does it fail them?
 
-This project analyses **50,000 Google Play reviews** (Nov 2025 – April 2026) to uncover what users actually struggle with behind Canva’s 4.8★ rating.
+This project analyses **50,000 Google Play reviews** (Nov 2025 – April 2026) to uncover what users actually struggle with behind Canva’s 4.7★ rating.
 
 Using a combination of **Python, SQL, and AI clustering techniques**, the analysis identifies recurring pain points, product issues, and patterns of user dissatisfaction at scale.
 
@@ -15,7 +15,7 @@ Rather than analysing individual reviews, this project extracts structured insig
 
 | # | Finding | Detail |
 |---|---------|--------|
-| 1 | **84.7% of reviews are positive** | Strong loyal user base — avg score 4.86 |
+| 1 | **84.7% of reviews are positive** | SStrong loyal user base — dataset avg score: 4.4 (vs 4.7★ all-time rating) |
 | 2 | **1,223 users are genuinely frustrated** | Negative score + explicit complaint keyword — crashes, bugs, slow performance |
 | 3 | **App instability is the #1 pain point** | 605 verbatims — not working, slow, crashes |
 | 4 | **Billing issues hidden behind good ratings** | 284 refund/subscription verbatims |
