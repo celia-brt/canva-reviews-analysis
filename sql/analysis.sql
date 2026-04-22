@@ -18,7 +18,9 @@ GROUP BY review_type
 ORDER BY total DESC;
 
 INSIGHT : 
-84.7% of users rate Canva positively (avg score: 4.86) — strong loyal user base
+Canva holds a 4.7★ rating on the Google Play Store (all-time)
+This dataset covers 50,000 recent reviews (Nov 2025 – Apr 2026) — avg score: 4.4
+84.7% of users rate Canva positively (avg score of positive review: 4.86) — strong loyal user base
 However, 5,143 users left negative reviews (avg score of negative review (1 or 2 stars): 1.24)
 Among these 5,143 negative reviews, 1,223 contain explicit complaint keywords (crashes, bugs, errors)
 These 1,223 users are the most actionable signal — real problems, worth investigating
