@@ -93,7 +93,7 @@ These recommendations focus on improving **product reliability, user trust, and 
 | Cleaning & features | Python — pandas, regex | [`scripts/clean_reviews.py`](scripts/clean_reviews.py) |
 | SQL analysis | SQLite — 3 relational tables | [`sql/analysis.sql`](sql/analysis.sql) |
 | Verbatim clustering | Python (embeddings + HDBSCAN, local LLM via Ollama) | [`scripts/cluster_summary.py`](scripts/cluster_summary.py) |
-| Visualisation | Looker Studio | [Dashboard](#) |
+| Visualisation | Data Studio | [Dashboard](#) |
 
 
 ---
