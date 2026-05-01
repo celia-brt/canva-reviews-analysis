@@ -3,7 +3,7 @@
 # Canva Google Play Reviews: customers frustrations, themes, and products signals
 ### How do users perceive Canva's app, and where does it fail them?
 
-This project analyses **50,000 Google Play reviews** (Nov 2025 – April 2026) to uncover what users actually struggle with behind Canva’s 4.7★ rating.
+This project analyses **50,000 Google Play reviews** (Nov 2025 – early April 2026) to uncover what users actually struggle with behind Canva’s 4.7★ rating.
 
 Using a combination of **Python, SQL, and AI clustering techniques**, the analysis identifies recurring pain points, product issues, and patterns of user dissatisfaction at scale.
 
