@@ -1,13 +1,12 @@
 <p align="center"><img width="210" height="110" alt="image" src="https://github.com/user-attachments/assets/7eef4089-7010-448c-8651-fad62533adf2" />
 
 # Canva Google Play Reviews: customers frustrations, themes, and products signals
+> 👉 [Looker Studio Dashboard](https://datastudio.google.com/s/n3HPM4JGqG0) · [LinkedIn](www.linkedin.com/in/celia-breteau)
 ### How do users perceive Canva's app, and where does it fail them?
 
 This project analyses **50,000 Google Play reviews** (Nov 2025 – early April 2026) to uncover what users actually struggle with behind Canva’s 4.7★ rating.
 
 Using a combination of **Python, SQL, and AI clustering techniques**, the analysis identifies recurring pain points, product issues, and patterns of user dissatisfaction at scale.
-
-Rather than analysing individual reviews, this project extracts structured insights from unstructured data to hightlight what truly impacts user experience.
 
 ---
 
@@ -93,7 +92,7 @@ These recommendations focus on improving **product reliability, user trust, and 
 | Cleaning & features | Python — pandas, regex | [`scripts/clean_reviews.py`](scripts/clean_reviews.py) |
 | SQL analysis | SQLite — 3 relational tables | [`sql/analysis.sql`](sql/analysis.sql) |
 | Verbatim clustering | Python (embeddings + HDBSCAN, local LLM via Ollama) | [`scripts/cluster_summary.py`](scripts/cluster_summary.py) |
-| Visualisation | Data Studio | [Dashboard](#) |
+| Visualisation | Data Studio | [Dashboard](https://datastudio.google.com/s/n3HPM4JGqG0) |
 
 
 ---
