@@ -16,7 +16,7 @@ Using a combination of **Python, SQL, and AI clustering techniques**, the analys
 |---|---------|--------|
 | 1 | **84.7% of reviews are positive** | Strong loyal user base — dataset avg score: 4.4 (vs 4.7★ all-time rating) |
 | 2 | **1,223 users are genuinely frustrated** | Negative score + explicit complaint keyword — crashes, bugs, slow performance |
-| 3 | **App instability is the #1 pain point** | 605 verbatims — not working, slow, crashes |
+| 3 | **App instability is the #1 pain point** | 607 verbatims — not working, slow, crashes |
 | 4 | **Billing issues hidden behind good ratings** | 284 refund/subscription verbatims |
 | 5 | **Versions 2.334.0 and 2.337.0 was a problematic release** | ~7% complaint rate vs 4% baseline |
 | 6 | **99.7% of responses are automated** | Only 43/13,087 personalised |
@@ -43,7 +43,7 @@ The most critical themes include:
 
 | Theme | Negativity Ratio | Volume |
 |------|----------------|--------|
-| App not working | 1.06 | 605 |
+| App not working | 1.06 | 607 |
 | App instability / slow | 1.10 | 144 |
 | Video download performance | 0.81 | 365 |
 | Billing & refunds | 0.78 | 284 |
@@ -74,7 +74,7 @@ This indicates a scalable but impersonal support strategy.
 
 | Priority | Theme | Recommendation |
 |----------|-------|----------------|
-| 🔴 Critical | App stability | Investigate the 605 users reporting complete app failure |
+| 🔴 Critical | App stability | Investigate the 607 users reporting complete app failure |
 | 🔴 Critical | Video performance | Optimise video download and export pipeline |
 | 🟠 High | Billing transparency | Notify users clearly before any Pro charge — 284 refund requests suggest surprise billing |
 | 🟡 Medium | Mobile UX | Dedicated optimisation pass for mobile experience |
