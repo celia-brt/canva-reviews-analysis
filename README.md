@@ -18,7 +18,7 @@ Using a combination of **Python, SQL, and AI clustering techniques**, the analys
 | 2 | **1,223 users are genuinely frustrated** | Negative score + explicit complaint keyword — crashes, bugs, slow performance |
 | 3 | **App instability is the #1 pain point** | 605 verbatims — not working, slow, crashes |
 | 4 | **Billing issues hidden behind good ratings** | 284 refund/subscription verbatims |
-| 5 | **Version 2.335.1 was a problematic release** | 18.9% complaint rate vs 7-10% baseline |
+| 5 | **Versions 2.334.0 and 2.337.0 was a problematic release** | ~7% complaint rate vs 4% baseline |
 | 6 | **99.7% of responses are automated** | Only 43/13,087 personalised |
 
 ---
@@ -54,8 +54,8 @@ These issues point to a **reliability problem**, not a feature gap.
 
 **Which versions generate the most complaints?**
 
-Version 2.335.1 peaks at 18.9% negative rate — well above 
-the 7-10% baseline of recent releases.
+Versions 2.334.0 and 2.337.0 exceed the baseline, reaching nearly 7% negative rate
+vs ~4% for typical releases.
 
 ---
 
@@ -74,7 +74,7 @@ This indicates a scalable but impersonal support strategy.
 
 | Priority | Theme | Recommendation |
 |----------|-------|----------------|
-| 🔴 Critical | App stability | Investigate cluster 253 — 605 users report the app not working at all |
+| 🔴 Critical | App stability | Investigate the 605 users reporting complete app failure |
 | 🔴 Critical | Video performance | Optimise video download and export pipeline |
 | 🟠 High | Billing transparency | Notify users clearly before any Pro charge — 284 refund requests suggest surprise billing |
 | 🟡 Medium | Mobile UX | Dedicated optimisation pass for mobile experience |
@@ -110,13 +110,15 @@ These recommendations focus on improving **product reliability, user trust, and 
 
 ## 👩‍💻 About This Project
 
-I'm Celia Breteau, a marketing insights professional transitioning 
-into data analytics role. After 2 years analysing audience profiles and 
-consumer behaviour across 6 industry sectors, I wanted to bring 
-that business instinct into a more technical skillset.
+I'm Celia Breteau, a data analyst with 2 years of experience in 
+audience analytics and consumer behaviour across 6 industry sectors. 
+I combine business instinct with a technical skillset in Python, SQL, 
+and AI clustering.
 
-This project was built because I genuinely wanted to understand 
-what real users think of Canva — not just the headline rating, 
-but the frustration behind it. Understanding customer needs has 
-always been at the core of my work, and data is just a more 
-precise way to do it.
+This project was built because I genuinely wanted to understand what 
+real users think of Canva — not just the headline rating, but the 
+frustration behind it. Understanding customer needs has always been 
+at the core of my work, and data is just a more precise way to do it.
+
+Based in Sydney. Open to Data Analyst and Business Intelligence 
+roles in tech, media, and consumer insights.
