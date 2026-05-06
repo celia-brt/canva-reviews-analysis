@@ -1,7 +1,10 @@
 <p align="center"><img width="210" height="110" alt="image" src="https://github.com/user-attachments/assets/7eef4089-7010-448c-8651-fad62533adf2" />
 
 # Canva Google Play Reviews: customers frustrations, themes, and products signals
-> 👉 [Looker Studio Dashboard](https://datastudio.google.com/s/n3HPM4JGqG0) · [LinkedIn](www.linkedin.com/in/celia-breteau)
+> 👉 [Looker Studio Dashboard](https://datastudio.google.com/s/n3HPM4JGqG0) · [View Presentation](https://canva.link/x3ne4cxmx5ll0us) · [LinkedIn](www.linkedin.com/in/celia-breteau)
+
+[![Presentation Preview](images/presentation_cover.png)](https://canva.link/x3ne4cxmx5ll0us)
+
 ### How do users perceive Canva's app, and where does it fail them?
 
 This project analyses **50,000 Google Play reviews** (Nov 2025 – early April 2026) to uncover what users actually struggle with behind Canva’s 4.7★ rating.
